@@ -1,0 +1,25 @@
+{
+  "name": "valle-mezquital-system",
+  "version": "1.0.0",
+  "description": "Sistema Gestor Administrativo Comunitario del Valle Mezquital",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run preview"
+  },
+  "keywords": [
+    "valle-mezquital",
+    "gestion-comunitaria",
+    "react",
+    "express",
+    "sql-server"
+  ],
+  "author": "Valle Mezquital",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
